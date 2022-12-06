@@ -1,15 +1,14 @@
 ﻿// Пользователь вводит с клавиатуры M чисел. Посчитайте, сколько чисел больше 0 ввёл пользователь.
 
 Console.Write("Введите через пробел числа: ");
-int[] arr = Array.ConvertAll(Console.ReadLine().Split(),int.Parse)!;
-
+int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
 
 int NumbersMoreZero(int[] array)
 {
     int count = 0;
     for (int i = 0; i < array.Length; i++)
     {
-        if (arr[i] > 0) count++;
+        if (array[i] > 0) count++;
     }
     return count;
 }
